@@ -6,7 +6,7 @@ location: Flywire
 
 En esta ocasión [@satanin](https://twitter.com/satanin) y [@zerolive](https://twitter.com/zerolive) van a darnos un pequeño curso introductorio a Rails.
 
-¡Habrá mucha parte práctica así que acuérdate de llevar tu portatil!
+¡Habrá mucha parte práctica así que acuérdate de llevar tu portátil!
 
 <a class="twitter-follow-button"
   href="https://twitter.com/satanin"
