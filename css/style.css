@@ -279,6 +279,14 @@ a.orange_button:hover {
     margin-top: 9px;
   }
 
+  a.onestic {
+    background: url(../img/onestic_logo.png) no-repeat top left;
+    width: 90px;
+    height: 90px;
+    background-size: cover;
+    margin: 0 auto;
+  }
+
 /* ===== media with different viewport classes ============================================ */
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
@@ -488,6 +496,14 @@ a.orange_button:hover {
       float: right;
     }
 
+    a.onestic {
+      background: url(../img/onestic_logo.png) no-repeat top left;
+      width: 90px;
+      height: 90px;
+      background-size: cover;
+      float: right;
+    }
+
 } /* min-width: 768px */
 
 /* Used to alter styles for screens at least 1024px wide. */
@@ -643,6 +659,14 @@ a.orange_button:hover {
     width: 132px;
     height: 48px;
     margin-top: 9px;
+    float: right;
+  }
+
+  a.onestic {
+    background: url(../img/onestic_logo.png) no-repeat top left;
+    width: 90px;
+    height: 90px;
+    background-size: cover;
     float: right;
   }
 
