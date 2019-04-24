@@ -4,12 +4,12 @@ Valencia.rb site
 Valencia.rb site: [http://valenciarb.org](http://valenciarb.org)  
 Googlegroups forum: [https://groups.google.com/forum/#!forum/valencia-rb](https://groups.google.com/forum/#!forum/valencia-rb)  
 Twitter handle: [https://twitter.com/valenciarb](https://twitter.com/valenciarb)  
-Join the [Valencia Devs slack](http://slack.vlctechhub.org/) and find us on the **#valenciarb** channel
+Join the [Valencia Tech slack](http://slack.vlctechhub.org/) and find us on the **#valenciarb** channel
 
 Setup
 =====
 
-You will need Ruby 2.3.1 and [Bundler](http://bundler.io) installed on your system.
+You will need Ruby 2.5+ and [Bundler](http://bundler.io) installed on your system.
 
 The site uses [Jekyll](http://jekyllrb.com), to run the site type the following in your
 terminal:
@@ -42,7 +42,7 @@ Once stopped (`crtl-C`) you can remove the stopped container by typing:
 $ docker-compose down
 ```
 
-If you want to olso remove the created images and volumes, type this instead:
+If you want to also remove the created images and volumes, type this instead:
 
 ```
 $ docker-compose down --rmi all --volumes

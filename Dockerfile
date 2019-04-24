@@ -1,6 +1,6 @@
-FROM ruby:2.4.2
+FROM ruby:2.6.3
 
-RUN apt-get update && apt-get install -y node
+RUN apt-get update && apt-get install -y nodejs
 
 ENV target /valenciarb
 WORKDIR $target
