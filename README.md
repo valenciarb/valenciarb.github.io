@@ -9,7 +9,7 @@ Join the [Valencia Tech slack](http://slack.vlctechhub.org/) and find us on the 
 Setup
 =====
 
-You will need Ruby 2.5+ and [Bundler](http://bundler.io) installed on your system.
+You will need Ruby 2.6+ and [Bundler](http://bundler.io) installed on your system.
 
 The site uses [Jekyll](http://jekyllrb.com), to run the site type the following in your
 terminal:
@@ -33,7 +33,7 @@ To run the site, type the following in your terminal:
 ```
 $ git clone https://github.com/valenciarb/valenciarb.github.io.git
 $ cd valenciarb.github.io
-$ docker-compose up --build
+$ docker-compose up
 ```
 
 Once stopped (`crtl-C`) you can remove the stopped container by typing:
