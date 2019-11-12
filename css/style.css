@@ -289,8 +289,16 @@ a.orange_button:hover {
 
   a.coverwallet {
     background: url(../img/coverwallet_logo.png) no-repeat top left;
-    width: 90px;
-    height: 90px;
+    width: 138px;
+    height: 600px;
+    background-size: cover;
+    margin: 0 auto;
+  }
+
+  a.xing {
+    background: url(../img/xing_logo.png) no-repeat top left;
+    width: 138px;
+    height: 60px;
     background-size: cover;
     margin: 0 auto;
   }
@@ -520,6 +528,14 @@ a.orange_button:hover {
       float: right;
     }
 
+    a.xing {
+      background: url(../img/xing_logo.png) no-repeat top left;
+      width: 110px;
+      height: 48px;
+      background-size: cover;
+      float: right;
+    }
+
 } /* min-width: 768px */
 
 /* Used to alter styles for screens at least 1024px wide. */
@@ -686,10 +702,10 @@ a.orange_button:hover {
     float: right;
   }
 
-  a.coverwallet {
-    background: url(../img/coverwallet_logo.png) no-repeat top left;
-    width: 90px;
-    height: 90px;
+  a.xing {
+    background: url(../img/xing_logo.png) no-repeat top left;
+    width: 138px;
+    height: 60px;
     background-size: cover;
     float: right;
   }
