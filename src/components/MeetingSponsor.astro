@@ -1,0 +1,12 @@
+---
+import Logo from "./Logo.astro"
+
+const { sponsor } = Astro.props
+---
+{sponsor.logo?
+<a href=`${sponsor.url}` target="_blank">
+  <Logo src={sponsor.logo} alt={sponsor.name} width={sponsor.logo_width}/>
+</a>
+:
+<a href=`${sponsor.url}` target="_blank">{sponsor.name}</a>
+}

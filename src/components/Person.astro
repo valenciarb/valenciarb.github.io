@@ -1,0 +1,43 @@
+---
+import { Image } from "astro:assets";
+
+const { name, social_name="", social_link= "", social_icon="", website="", avatar=""} = Astro.props
+---
+<article class="media box">
+  { avatar &&
+    <figure class="media-left">
+      <p class="image is-64x64">
+        <img class="is-rounded" src=`/src/images/people/${avatar}` />
+      </p>
+    </figure>
+  }
+  <div class="media-content">
+    <div class="content">
+      <p class="is-size-7">
+        <strong>{name}</strong>
+        <br />
+        <slot/>
+      </p>
+    </div>
+    <nav class="level is-mobile">
+      <div class="level-left is-size-7">
+        { website &&
+          <small>
+            <a href=`${website}` target="_blank" class="level-item">
+              <span class="icon"><i class="fas fa-earth-europe"></i></span>
+              website
+            </a>
+          </small>
+        }
+        { social_name &&
+          <small>
+            <a href=`${social_link}` target="_blank" class="level-item">
+              <span class="icon"><i class=`fab fa-${social_icon}`></i></span>
+              {social_name}
+            </a>
+          </small>
+        }
+      </div>
+    </nav>
+</div>
+</article>

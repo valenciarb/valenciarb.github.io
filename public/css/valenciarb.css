@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --bulma-family-primary: "Noto Sans", "Helvetica Neue", Helvetica;
+  --bulma-pagination-current-border-color: #cc342d;
+}
+
+a {
+  color: #cc342d;
+}
+
+.is-red {
+  color: #cc342d !important;
+}
+
+.header {
+  .title {
+    font-size: 36px;
+    a {
+      color: black;
+    }
+  }
+  .subtitle {
+    color: rgb(88, 84, 80);
+  }
+}
+
+.subtitle {
+  color: rgb(17, 17, 17);
+}
+
+.footer {
+  margin-top: 0;
+  padding-top: 0;
+  background-color: #f6f6f3;
+  box-sizing: border-box;
+
+  .links {
+    clear: both;
+    background: #ebebe4;
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+  }
+
+  a {
+    display: inline-block;
+    color: #555;
+    text-decoration: underline;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-shadow: 0 1px 0 #fff;
+  }
+
+  p {
+    padding-right: 3%;
+    padding-left: 3%;
+    color: black;
+  }
+}
+
+.meeting {
+  color: black;
+  .title {
+    color: #cc342d;
+    text-rendering: optimizeLegibility;
+  }
+  aside {
+    color: rgb(128, 128, 128);
+  }
+}
+
+.top-navigation {
+  overflow: hidden;
+  border-top: 5px solid #cc342d;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background: #585450;
+
+  a {
+    color: #f6f6f3;
+    text-shadow: 0 1px 0 #000;
+    background-color: #585450;
+    display: inline-block;
+    text-decoration: none;
+  }
+}
+
+.pagination-link {
+  border-bottom-color: white;
+  border-left-color: white;
+  border-right-color: white;
+  border-top-color: white;
+}

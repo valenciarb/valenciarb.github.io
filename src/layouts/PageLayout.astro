@@ -1,0 +1,25 @@
+---
+import Anouncement from "../components/Anouncement.astro";
+import Footer from "../components/Footer.astro";
+import Head from "../components/Head.astro";
+import Header from "../components/Header.astro";
+import Logo from "../components/Logo.astro";
+import NarrowSection from "../components/NarrowSection.astro";
+
+const { title } = Astro.props
+---
+<html lang="en" class="theme-light">
+  <Head
+    title={title}
+  />
+  <body>
+    <Header/>
+    <!-- <Anouncement>
+      ---- Anouncement section here ----
+    </Anouncement> -->
+    <NarrowSection>
+      <slot/>
+    </NarrowSection>
+    <Footer/>
+  </body>
+ </html>

@@ -1,0 +1,47 @@
+---
+import Logo from "../components/Logo.astro";
+import Meeting from "../components/Meeting.astro";
+import MeetingSponsor from "../components/MeetingSponsor.astro";
+import PageLayout from "../layouts/PageLayout.astro";
+import People from "../components/People.astro";
+
+const dateOptions: Intl.DateTimeFormatOptions = {
+  weekday: "long",
+  year: "numeric",
+  month: "long",
+  day: "numeric"
+};
+const allMeetings = Object.values(await import.meta.glob('./meetings/*.md', { eager: true }));
+const latestMeeting = allMeetings.reverse()[0];
+---
+<PageLayout
+  title="Bienvenidos al grupo de Valencia.rb"
+  >
+
+  <Meeting
+    date={new Date(latestMeeting.frontmatter.date).toLocaleDateString("es", dateOptions)}
+    date_time={latestMeeting.frontmatter.date}
+    title={latestMeeting.frontmatter.title}
+    location={latestMeeting.frontmatter.location}
+    location_map={latestMeeting.frontmatter.location_map}
+    posted={latestMeeting.frontmatter.author}
+  >
+  { latestMeeting.frontmatter.sponsor?
+    <MeetingSponsor sponsor={latestMeeting.frontmatter.sponsor} slot={latestMeeting.frontmatter.sponsor && "sponsors"}/>
+    :
+    <span></span>
+  }
+  { latestMeeting.frontmatter.extras?
+    <div slot="extras">
+      <div class="has-text-right">
+        <Logo src={latestMeeting.frontmatter.extras.src} alt={latestMeeting.frontmatter.extras.alt} width={latestMeeting.frontmatter.extras.width}/>
+      </div>
+    </div>
+    :
+    <span></span>
+  }
+
+    <Fragment set:html={latestMeeting.compiledContent()}/>
+  </Meeting>
+  <People/>
+</PageLayout>

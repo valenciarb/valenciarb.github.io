@@ -1,0 +1,50 @@
+export const languages = {
+  en: "English",
+  es: "Español",
+};
+
+export const defaultLang = "es";
+export const showDefaultLang = false;
+
+export const routes = {
+  // es: {
+  //     'services': 'servicios',
+  //     'publications': 'publicaciones',
+  //     'testimonials': 'testimonios',
+  // },
+};
+
+export const ui = {
+  en: {
+    "header.tagline": "a user-group for developers, techies & ruby lovers",
+    "header.connected": "Connected with",
+    "header.nav.start": "Start",
+    "header.nav.previous": "Previous meetings",
+    "header.nav.coc": "Code of conduct",
+    "footer.intro":
+      "is the local Ruby users group in Valencia. We usually meet at least once a month over some light snacks and beers",
+    "footer.participate": "Do you want to participate in the community?",
+    "footer.join":
+      "Join the conversation on  <a href='https://slack.vlctechhub.org/'>Slack</a> in the <a href='https://vlctechhub.slack.com/messages/valenciarb'>#valenciarb</a> channel.",
+    "footer.languages": "This site in other languages:",
+    "footer.follow": "Follow us on",
+    members: "Members",
+    "sponsors.thanks": "Thanks to this events sponsors!",
+  },
+  es: {
+    "header.tagline": "un grupo para desarolladores, techies y amantes de ruby",
+    "header.connected": "Conectado con",
+    "header.nav.start": "Inicio",
+    "header.nav.previous": "Reuniones previas",
+    "header.nav.coc": "Código de conducta",
+    "footer.intro":
+      "es el grupo local de usuarios de Ruby en Valencia. Nos encontramos habitualmente al menos una vez al mes alrededor de un pequeño picoteo y unas cervezas.",
+    "footer.participate": "¿Quieres participar en la comunidad?",
+    "footer.join":
+      "Únete a la conversación en <a href='https://slack.vlctechhub.org/'>Slack</a> en el canal de <a href='https://vlctechhub.slack.com/messages/valenciarb'>#valenciarb</a>.",
+    "footer.languages": "Este sitio en otros idiomas:",
+    "footer.follow": "Siguenos en",
+    members: "Miembros",
+    "sponsors.thanks": "¡Agradecimientos a los sponsors de este evento!",
+  },
+} as const;

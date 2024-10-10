@@ -1,0 +1,38 @@
+---
+import NarrowSection from "./NarrowSection.astro";
+import Logo from "./Logo.astro";
+import { getLangFromUrl, useTranslations, useTranslatedPath } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+---
+
+<NarrowSection css="mt-0 pt-4">
+  <div class="header columns mt-0">
+    <div class="column is-1 mt-0">
+    <Logo src="valenciarb.png" alt="Valencia.rb" width="100"/>
+    </div>
+    <div class="column is-8 mt-0">
+      <h1 class="title"><a href={translatePath("/")}>Valencia.rb</a></h1>
+      <h2 class="subtitle is-5">{t("header.tagline")}</h2>
+    </div>
+    <div class="column mt-0">
+      <figure class="image">
+        <Logo src="vlctechhub.png" alt="Valencia Tech Hub"/>
+        <figcaption class="is-size-7 has-text-centered">
+          {t("header.connected")} <a href="https://vlctechhub.org" class="is-underlined has-text-dark">VLCTechHub</a>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+  <nav class="top-navigation level px-4 py-2">
+    <div class="level-left">
+      <a href={translatePath("/")}>{t("header.nav.start")}</a>
+      <a href={translatePath("/meetings")}>{t("header.nav.previous")}</a>
+      <a href={translatePath("/coc")}>{t("header.nav.coc")}</a>
+    </div>
+    <div class="level-right">
+    </div>
+  </nav>
+</NarrowSection>

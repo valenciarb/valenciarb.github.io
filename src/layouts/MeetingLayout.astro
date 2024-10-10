@@ -1,0 +1,56 @@
+---
+import Footer from "../components/Footer.astro";
+import Head from "../components/Head.astro";
+import Header from "../components/Header.astro";
+import Logo from "../components/Logo.astro";
+import Meeting from "../components/Meeting.astro";
+import MeetingSponsor from "../components/MeetingSponsor.astro"
+import NarrowSection from "../components/NarrowSection.astro";
+import { getLangFromUrl } from '/src/i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+
+const { frontmatter } = Astro.props;
+const dateOptions: Intl.DateTimeFormatOptions = {
+  weekday: "long",
+  year: "numeric",
+  month: "long",
+  day: "numeric"
+};
+const date = new Date(frontmatter.date).toLocaleDateString(lang, dateOptions);
+---
+<html lang="en" class="theme-light">
+  <Head
+    title={frontmatter.title}
+  />
+  <body>
+    <Header/>
+    <NarrowSection>
+    <Meeting
+      date={date}
+      date_time={frontmatter.date}
+      title={frontmatter.title}
+      location={frontmatter.location}
+      location_map={frontmatter.location_map}
+      posted={frontmatter.author}
+      >
+      <slot/>
+      { frontmatter.sponsor?
+        <MeetingSponsor sponsor={frontmatter.sponsor} slot={frontmatter.sponsor && "sponsors"}/>
+        :
+        <span>ha</span>
+      }
+      { frontmatter.extras?
+        </span><div slot="extras">
+          <div class="has-text-right">
+            <Logo src={frontmatter.extras.src} alt={frontmatter.extras.alt} width={frontmatter.extras.width}/>
+          </div>
+        </div>
+        :
+        <span></span>
+      }
+    </Meeting>
+    </NarrowSection>
+    <Footer/>
+  </body>
+</html>

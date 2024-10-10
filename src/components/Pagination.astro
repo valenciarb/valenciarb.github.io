@@ -1,0 +1,19 @@
+---
+const { length, currentPage, firstUrl } = Astro.props;
+// @ts-ignore: Unreachable code error
+const paginationList = Array.from({length: `${Number(length)}`}, (_, i) => i + 1);
+---
+<nav aria-label="pagination" class="pagination is-small">
+
+<ul class="pagination-list">
+  {
+    paginationList.map((num) => (
+      <li>
+        <a href={`${firstUrl}${num == 1 ? "" : '/'+(num)}`} class={`pagination-link ${currentPage == num ? "is-current has-background-danger-35 has-text-weight-bold" : ""}`}>
+          {num}
+        </a>
+      </li>
+    ))
+  }
+</ul>
+</nav>

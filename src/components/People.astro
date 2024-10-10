@@ -1,0 +1,49 @@
+---
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import Person from "./Person.astro";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+// Adding a person:
+// - create a new cell (<div class="cell">)
+// - add the person inside the cell (<Person>)
+// Check other people added already or the Person component
+// to know what you can add to it for the person to be
+// displayed properly.
+---
+<h1 class="title is-size-4">
+  <span class="icon mr-2 has-text-grey"><i class="fas fa-people-group"></i></span>
+  <span class="is-red">{t("members")}</span>
+</h1>
+<div class="grid">
+  <div class="cell">
+    <Person
+      avatar="ecomba.png"
+      name="Enrique Comba Riepenhausen"
+      social_name="ecomba"
+      social_link="https://ruby.social/@ecomba"
+      social_icon="mastodon"
+      website="https://ecomba.pro"
+    >
+    I help software teams like yours to build better software faster by making you awesome!
+    </Person>
+  </div>
+  <div class="cell">
+    <Person
+      avatar="ecomba.png"
+      name="El otro Enrique"
+      website="https://ecomba.pro"
+    >
+    I'm the other guy who doesn't like helping you or making you awesome!
+    </Person>
+  </div>
+  <div class="cell">
+    <Person
+        avatar="ecomba.png"
+        name="Y un Enrique mas"
+    >
+      And I'm just here to look around...
+    </Person>
+  </div>
+</div>

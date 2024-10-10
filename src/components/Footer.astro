@@ -1,0 +1,41 @@
+---
+import NarrowSection from "./NarrowSection.astro";
+import { getLangFromUrl, useTranslations, useTranslatedPath } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+---
+<NarrowSection>
+  <slot/>
+  <footer class="footer m-0 p-0 pb-1">
+    <nav class="links mx-0 py-1 px-5 is-size-6 mb-4">
+      <a href={translatePath("/")} class="ml-3">{t("header.nav.start")}</a>
+      <a href={translatePath("/meetings")} class="ml-3">{t("header.nav.previous")}</a>
+      <a href={translatePath("/coc")}>{t("header.nav.coc")}</a>
+    </nav>
+    <p>
+      <strong>Valencia.rb</strong>
+      {t("footer.intro")}
+    </p>
+    <p class="mt-4">
+      <strong>{t("footer.participate")}</strong>
+      <Fragment set:html={t("footer.join")}/>
+    </p>
+    <p class="mt-4">
+      {t("footer.languages")}
+      <a href="/">Español</a>,
+      <a href="/en">English</a>
+    </p>
+    <div class="level px-6 mt-4">
+      <div class="level-left"></div>
+      <div class="level-right">
+        <span class="is-size-7">{t("footer.follow")}</span>
+        <a href="https://slack.vlctechhub.org/" target="_blank"><span class="icon"><i class="fab fa-slack"></i></span></a>
+        <a href="https://github.com/valenciarb" target="_blank"><span class="icon"><i class="fab fa-github"></i></span></a>
+        <a href="https://ruby.social/@valenciarb" target="_blank"><span class="icon"><i class="fab fa-mastodon"></i></span></a>
+        <a href="https://twitter.com/intent/user?screen_name=valenciarb" target="_blank"><span class="icon"><i class="fab fa-twitter"></i></span></a>
+      </div>
+    </div>
+  </footer>
+</NarrowSection>
