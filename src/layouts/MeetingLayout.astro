@@ -6,7 +6,7 @@ import Logo from "../components/Logo.astro";
 import Meeting from "../components/Meeting.astro";
 import MeetingSponsor from "../components/MeetingSponsor.astro"
 import NarrowSection from "../components/NarrowSection.astro";
-import { getLangFromUrl } from '/src/i18n/utils';
+import { getLangFromUrl } from '../i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
 
@@ -41,7 +41,7 @@ const date = new Date(frontmatter.date).toLocaleDateString(lang, dateOptions);
         <span>ha</span>
       }
       { frontmatter.extras?
-        </span><div slot="extras">
+        <div slot="extras">
           <div class="has-text-right">
             <Logo src={frontmatter.extras.src} alt={frontmatter.extras.alt} width={frontmatter.extras.width}/>
           </div>

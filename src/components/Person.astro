@@ -1,13 +1,11 @@
 ---
-import { Image } from "astro:assets";
-
 const { name, social_name="", social_link= "", social_icon="", website="", avatar=""} = Astro.props
 ---
 <article class="media box">
   { avatar &&
     <figure class="media-left">
       <p class="image is-64x64">
-        <img class="is-rounded" src=`/src/images/people/${avatar}` />
+        <img class="is-rounded" src=`/src/images/people/${avatar}` alt={name}/>
       </p>
     </figure>
   }

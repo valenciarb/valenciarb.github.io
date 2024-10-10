@@ -19,29 +19,26 @@ const latestMeeting = allMeetings.reverse()[0];
   >
 
   <Meeting
-    date={new Date(latestMeeting.frontmatter.date).toLocaleDateString("es", dateOptions)}
-    date_time={latestMeeting.frontmatter.date}
-    title={latestMeeting.frontmatter.title}
-    location={latestMeeting.frontmatter.location}
-    location_map={latestMeeting.frontmatter.location_map}
-    posted={latestMeeting.frontmatter.author}
+  date={new Date((latestMeeting as any).frontmatter.date).toLocaleDateString("es", dateOptions)}
+  date_time={(latestMeeting as any).frontmatter.date}
+  title={(latestMeeting as any).frontmatter.title}
+  location={(latestMeeting as any).frontmatter.location}
+  location_map={(latestMeeting as any).frontmatter.location_map}
+  posted={(latestMeeting as any).frontmatter.author}
   >
-  { latestMeeting.frontmatter.sponsor?
-    <MeetingSponsor sponsor={latestMeeting.frontmatter.sponsor} slot={latestMeeting.frontmatter.sponsor && "sponsors"}/>
-    :
-    <span></span>
+  { (latestMeeting as any).frontmatter.sponsor &&
+    <MeetingSponsor sponsor={(latestMeeting as any).frontmatter.sponsor} slot={(latestMeeting as any).frontmatter.sponsor && "sponsors"}/>
   }
-  { latestMeeting.frontmatter.extras?
+  { (latestMeeting as any).frontmatter.extras ?
     <div slot="extras">
       <div class="has-text-right">
-        <Logo src={latestMeeting.frontmatter.extras.src} alt={latestMeeting.frontmatter.extras.alt} width={latestMeeting.frontmatter.extras.width}/>
+      <Logo src={(latestMeeting as any).frontmatter.extras.src} alt={(latestMeeting as any).frontmatter.extras.alt} width={(latestMeeting as any).frontmatter.extras.width}/>
       </div>
     </div>
-    :
-    <span></span>
+    : null
   }
 
-    <Fragment set:html={latestMeeting.compiledContent()}/>
+  <Fragment set:html={(latestMeeting as any).compiledContent()}/>
   </Meeting>
   <People/>
 </PageLayout>

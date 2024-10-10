@@ -1,6 +1,6 @@
 ---
 export const prerender = true;
-import { getLangFromUrl, useTranslations } from '/src/i18n/utils';
+import { getLangFromUrl, useTranslations } from '../../../src/i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -10,7 +10,9 @@ import PageLayout from "../../layouts/PageLayout.astro";
 import Pagination from "../../components/Pagination.astro";
 
 const allMeetings = await Astro.glob('./*.md*');
+// @ts-ignore
 export async function getStaticPaths({ paginate }) {
+  // @ts-ignore
   const allMeetings = await Astro.glob('./*.md*');
 
     return paginate(allMeetings.reverse(), {
@@ -27,26 +29,25 @@ const dateOptions: Intl.DateTimeFormatOptions = {
   day: "numeric"
 };
 ---
-{firstPath}
 <PageLayout title="Meetings">
+
   <h1 class="title is-red">{t("header.nav.previous")}</h1>
-  {page.data.map((meeting: { frontmatter: { date: string; title: string }; compiledContent: () => string }) =>
-  <Meeting
-    date={new Date(meeting.frontmatter.date).toLocaleDateString("es", dateOptions)}
-    date_time{meeting.frontmatter.date}
-    title=`<a href="${meeting.url}">${meeting.frontmatter.title}</a>`>
-  </Meeting>
+  {page.data.map((meeting: any) =>
+  <Meeting date={new Date(meeting.frontmatter.date).toLocaleDateString("es", dateOptions)}
+    date_time={meeting.frontmatter.date}
+    title=`<a href=${meeting.url}>${meeting.frontmatter.title}</a>` />
   )}
-  {allMeetings.length > 1 ? (
-            <div class="mt-4">
-                <Pagination length={page.lastPage}
-                            currentUrl={page.url.current}
-                            currentPage={page.currentPage}
-                            firstUrl={`/${firstPath}`}
-                            prevUrl={page.url.prev}
-                            nextUrl={page.url.next}
-                            lastUrl={`/${firstPath}/${page.lastPage}`}
-                />
-            </div>
-    ) : null}
+  {allMeetings.length > 1 ?
+    <div class="mt-4">
+      <Pagination length={page.lastPage}
+                  currentUrl={page.url.current}
+                  currentPage={page.currentPage}
+                  firstUrl={`/${firstPath}`}
+                  prevUrl={page.url.prev}
+                  nextUrl={page.url.next}
+                  lastUrl={`/${firstPath}/${page.lastPage}`}/>
+    </div>
+    : null
+  }
+
 </PageLayout>
