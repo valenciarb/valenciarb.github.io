@@ -1,0 +1,15 @@
+---
+import { Image } from "astro:assets";
+import NotFound from "../images/404.webp";
+
+import PageLayout from "../layouts/PageLayout.astro";
+---
+<PageLayout>
+  <h1 class="title has-text-centered">404 Not Found</h1>
+
+  <figure class="image">
+    <Image src={NotFound} alt="Sad bat"/>
+    <figcaption class="has-text-centered">Sorry, I could not find that page</figcaption>
+  </figure>
+
+</PageLayout>
