@@ -36,4 +36,4 @@ en sus oficinas.
 ##### Agenda
 
 - **Intro**: Ruby Europe Initiative
-- **Charla**: [Rosa Gutiérrez](https://rosa.codes) - _**Solid Queue internals, externals and all the things in between**_ (_la misma charla que dio en [Ruby Word 2024](https://rubyonrails.org/world/2024/day-1/rosa-gutierrez)_)
+- **Charla**: [Rosa Gutiérrez](https://rosa.codes) - _**Solid Queue internals, externals and all the things in between**_
