@@ -22,12 +22,18 @@ of our website:
 ## 🎤 Adding a new event
 
 To add a new event you'll have to add it to the `src/pages/meetings` and `src/pages/en/meetings` directories
-(‼️ this is important. If you forget to add the meeting to either the main or the `en` directories the page
+
+‼️ **This is important** ‼️
+
+If you forget to add the meeting to either the main or the `en` directories the page
 will fail to serve that meeting in the respective language and we will have a sad 🦇.
+
+The file names follow this pattern: `yyyy-mm-dd-name-of-the-event.md`
 
 ### Structure of the meeting markdown file
 
 ```
+---
 layout: ../../layouts/MeetingLayout.astro (or, when in the /en directory ../../../layouts/MeetingLayout.astro)
 date: 2024-11-06 18:00
 title: "Title of the meeting"
@@ -43,8 +49,32 @@ extras:
   src: "Image file"
   alt: "Alt text for the image"
   width: "Width of the image"
+---
+Markdown content for the event here
 ```
 
+## 🧛🏼‍♀️🧛🏽‍♂️ Adding a new members
+
+To add a new member to the group you'll have to:
+
+- Get an image (square if possible) and add it to `/public/images/people` (make sure there aren't any name collisions)
+- Update the `people.json` file with the information of the person.
+
+### people.json structure of a person
+
+To add a person create a new object (`{}`) inside the `people` array in the [people.json](./src/people.json) file.
+
+All fields are optional, but if you don't have an image it will look odd (also a person without a name makes little sense).
+
+There are the following (optional) fields:
+
+- avatar: the name of the image file for that person
+- name : the name of that person
+- social_name: the handle of that person in their social network of choice
+- social_link: the link to their social network profile
+- social_icon: the icon of their social network of choice (possible values are: bluesky, facebook, mastodon, threads and twitter )
+- website: the URL to their website
+- intro: a little text about them
 
 
 ## 🧞 Commands for running this site locally
