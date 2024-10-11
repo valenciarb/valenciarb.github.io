@@ -14,7 +14,7 @@ const dateOptions: Intl.DateTimeFormatOptions = {
 };
 const lang = getLangFromUrl(Astro.url);
 // @ts-ignore
-const allMeetings = Object.values(import.meta.glob('./../meetings/*.md', { eager: true }));
+const allMeetings = Object.values(import.meta.glob('./../en/meetings/*.md', { eager: true }));
 const latestMeeting = allMeetings.reverse()[0];
 ---
 <PageLayout

@@ -16,6 +16,18 @@ extras:
   width: "300px"
 ---
 
+**Valencia.rb** is being re-launched after a nearly 5 years hiatus.
+
+Our re-launch event couldn't be better! The [Ruby Europe](https://rubyeurope.com) initiative has given us the motivation we needed to start talking again about the language we're so passionate about: **Ruby**.
+
+At our next meeting, we are pleased to have [Rosa Gutiérrez](https://rosa.codes), a programmer at [37Signals](https://37signals.com) (_the company behind [Ruby on Rails](https://rubyonrails.org) and products like [Basecamp](https://basecamp.com) and [Hey](https://www.hey.com)_).
+
+We also have the support of [New Work Valencia]() who will let us meet in their offices.
+
+**We'll see you on November 6th**
+
+You can't miss it!
+
 **Agenda**
 
 - **Intro**: Ruby Europe Initiative
