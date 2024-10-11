@@ -10,7 +10,12 @@
     },
     {
       "avatar": "ignacio-huerta.jpeg",
-      "name": "Ignacio Huerta"
+      "name": "Ignacio Huerta",
+      "social_name": "iox",
+      "social_icon": "github",
+      "social_link": "https://github.com/iox",
+      "website": "https://starfish.team/",
+      "intro": "Open source enthusiast, with a particular love of Ruby and building nice software with it."
     },
     {
       "avatar": "llyorshch.png",
