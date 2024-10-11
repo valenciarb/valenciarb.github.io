@@ -6,7 +6,12 @@
     },
     {
       "avatar": "carla-urrea.png",
-      "name": "Carla Urrea Stabile"
+      "name": "Carla Urrea Stabile",
+      "social_name": "carlastabile",
+      "social_icon": "linkedin",
+      "social_link": "https://linkedin.com/in/carlastabile",
+      "website": "https://carlastabile.tech",
+      "intro": "I'm a Software Engineer and Developer Advocate who enjoys working with Ruby and python and creating content about it."
     },
     {
       "avatar": "ignacio-huerta.jpeg",
