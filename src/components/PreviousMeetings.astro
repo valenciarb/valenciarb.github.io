@@ -1,0 +1,35 @@
+---
+import Pagination from "./Pagination.astro"
+import { useTranslations } from '../../src/i18n/utils';
+
+const {page, allMeetings, firstPath, lang} = Astro.props
+const t = useTranslations(lang);
+
+const dateOptions: Intl.DateTimeFormatOptions = {
+  weekday: "long",
+  year: "numeric",
+  month: "long",
+  day: "numeric"
+};
+---
+<h1 class="title is-size-4 is-red">{t("header.nav.previous")}</h1>
+  {page.data.map((meeting: any) =>
+    <article class="my-2">
+      <h1 class="title is-size-5 has-text-weight-light is-red">
+        <a href={meeting.url}>{meeting.frontmatter.title}</a>
+      </h1>
+      <time class="subtitle is-size-6">{new Date(meeting.frontmatter.date).toLocaleDateString(lang, dateOptions)}</time>
+    </article>
+  )}
+  {allMeetings.length > 1 ?
+    <div class="mt-4">
+      <Pagination length={page.lastPage}
+                  currentUrl={page.url.current}
+                  currentPage={page.currentPage}
+                  firstUrl={`/${firstPath}`}
+                  prevUrl={page.url.prev}
+                  nextUrl={page.url.next}
+                  lastUrl={`/${firstPath}/${page.lastPage}`}/>
+    </div>
+    : null
+  }
