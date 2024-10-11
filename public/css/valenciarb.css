@@ -92,3 +92,7 @@ a {
   border-right-color: white;
   border-top-color: white;
 }
+
+.box-h {
+  height: 100%;
+}

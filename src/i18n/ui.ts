@@ -31,7 +31,9 @@ export const ui = {
     "footer.inspired": "inspired by",
     "footer.designed": "& designed by",
     members: "Members",
-    "sponsors.thanks": "Thanks to this events sponsors!",
+    sponsors: "Sponsors",
+    "sponsors.thanks": "Thanks our sponsors!",
+    "sponsors.event.thanks": "Thanks to this events sponsors!",
   },
   es: {
     "header.tagline": "un grupo para desarolladores, techies y amantes de ruby",
@@ -49,6 +51,8 @@ export const ui = {
     "footer.inspired": "inspirado por",
     "footer.designed": "y diseñado por",
     members: "Miembros",
-    "sponsors.thanks": "¡Agradecimientos a los sponsors de este evento!",
+    sponsors: "Sponsors",
+    "sponsors.thanks": "¡Agradecimientos nuestros sponsors!",
+    "sponsors.event.thanks": "¡Agradecimientos a los sponsors de este evento!",
   },
 } as const;

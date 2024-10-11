@@ -2,7 +2,13 @@
 import Footer from "../components/Footer.astro";
 import Head from "../components/Head.astro";
 import Header from "../components/Header.astro";
+import Logo from "../components/Logo.astro";
 import NarrowSection from "../components/NarrowSection.astro";
+import { getLangFromUrl, useTranslations, useTranslatedPath } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
 
 const { title } = Astro.props
 ---
@@ -17,6 +23,17 @@ const { title } = Astro.props
     </Anouncement> -->
     <NarrowSection>
       <slot/>
+      <hr>
+      <div class="has-text-centered">
+        <h1 class="title is-size-6 is-red">{t("sponsors")}</h1>
+        <div class="grid">
+          <div class="cell">
+            <a href="https://www.iukanet.com" target="_blank">
+              <Logo src="iukanet.png" alt="Administración de Sistemas y Servidores a Medida" width="100"/>
+            </a>
+          </div>
+        </div>
+      </div>
     </NarrowSection>
     <Footer/>
   </body>

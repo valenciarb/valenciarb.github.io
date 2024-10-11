@@ -6,7 +6,7 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
 ---
-<NarrowSection>
+<NarrowSection css="px-0">
   <slot/>
   <footer class="footer m-0 p-0 pb-1">
     <nav class="links mx-0 py-1 px-5 is-size-6 mb-4">
