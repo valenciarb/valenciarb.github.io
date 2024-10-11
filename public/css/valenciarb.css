@@ -96,3 +96,26 @@ a {
 .box-h {
   height: 100%;
 }
+
+.anouncement {
+  background-size: 412px 421px;
+  box-sizing: border-box;
+  border-bottom-color: rgb(204, 204, 204);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-top-color: rgb(204, 204, 204);
+  border-top-style: solid;
+  border-top-width: 1px;
+
+  h1 {
+    color: rgb(204, 52, 45);
+    font-size: 32px;
+    font-weight: 800;
+    text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+  }
+  p {
+    font-size: 22px;
+    color: black;
+    text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+  }
+}

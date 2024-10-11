@@ -21,6 +21,9 @@ const latestMeeting = allMeetings.reverse()[0];
   title="Welcome"
   >
 
+  <h1 class="title">Next Meeting</h1>
+  <hr>
+
   <Meeting
   date={new Date((latestMeeting as any).frontmatter.date).toLocaleDateString(lang, dateOptions)}
   date_time={(latestMeeting as any).frontmatter.date}

@@ -18,6 +18,9 @@ const latestMeeting = allMeetings.reverse()[0];
   title="Bienvenidos al grupo de Valencia.rb"
   >
 
+  <h1 class="title">Proxima Reunion</h1>
+  <hr>
+
   <Meeting
   date={new Date((latestMeeting as any).frontmatter.date).toLocaleDateString("es", dateOptions)}
   date_time={(latestMeeting as any).frontmatter.date}

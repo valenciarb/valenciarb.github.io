@@ -1,15 +1,6 @@
 {
   "people": [
     {
-      "avatar": "ecomba.png",
-      "name": "Enrique Comba Riepenhausen",
-      "social_name": "ecomba",
-      "social_link": "https://ruby.social/@ecomba",
-      "social_icon": "mastodon",
-      "website": "https://ecomba.pro",
-      "intro": "I help software teams like yours to build better software faster by making you awesome!"
-    },
-    {
       "avatar": "eduardo-sebastian.jpeg",
       "name": "Eduardo Sebastian"
     },
@@ -29,6 +20,15 @@
       "avatar": "juan-f-perez.jpeg",
       "name": "Juan F. Pérez",
       "intro": "Hago algunas cosas"
+    },
+    {
+      "avatar": "ecomba.png",
+      "name": "Enrique Comba Riepenhausen",
+      "social_name": "ecomba",
+      "social_link": "https://ruby.social/@ecomba",
+      "social_icon": "mastodon",
+      "website": "https://ecomba.pro",
+      "intro": "I help software teams like yours to build better software faster by making you awesome!"
     }
   ]
 }

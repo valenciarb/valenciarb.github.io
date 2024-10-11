@@ -16,9 +16,24 @@ extras:
   width: "300px"
 ---
 
-# Estamos de vuelta!
+**Valencia.rb** vuelve a re-inagurarse tras casi 5 años de inactividad.
 
-**Agenda**
+Nuestro evento de re-inaguración no podría estar mejor! La iniciativa
+[Ruby Europe](https://rubyeurope.com) nos ha dado la motivación que
+necesitabamos para volver a hablar de ese lenguaje que tanto nos apasiona **Ruby**.
+
+En nuestra siguiente reunión tenemos el placer de contar con
+[Rosa Gutiérrez](https://rosa.codes), programadora en [37Signals](https://37signals.com) (_la compañia detras
+de [Ruby on Rails](https://rubyonrails.org) y productos como [Basecamp](https://basecamp.com) y [Hey](https://www.hey.com)_).
+
+También contamos con el apoyo de [New Work Valencia]() que nos dejarán reunirnos
+en sus oficinas.
+
+**Nos vemos el dia 6 de Noviembre**
+
+¡No os lo podeis perder!
+
+##### Agenda
 
 - **Intro**: Ruby Europe Initiative
 - **Charla**: [Rosa Gutiérrez](https://rosa.codes) - _**Solid Queue internals, externals and all the things in between**_ (_la misma charla que dio en [Ruby Word 2024](https://rubyonrails.org/world/2024/day-1/rosa-gutierrez)_)

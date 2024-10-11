@@ -16,8 +16,6 @@ extras:
   width: "300px"
 ---
 
-# Estamos de vuelta!
-
 **Agenda**
 
 - **Intro**: Ruby Europe Initiative
