@@ -60,7 +60,7 @@ To add a new member to the group you'll have to:
 - Get an image (square if possible) and add it to `/public/images/people` (make sure there aren't any name collisions)
 - Update the `people.json` file with the information of the person.
 
-### people.json structure of a person
+### The people.json structure
 
 To add a person create a new object (`{}`) inside the `people` array in the [people.json](./src/people.json) file.
 
@@ -90,6 +90,6 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
+## 👀 Want to learn more about astro?
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Feel free to check [the documentation](https://docs.astro.build) or jump into Astros' [Discord server](https://astro.build/chat).
