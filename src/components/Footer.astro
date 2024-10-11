@@ -27,8 +27,15 @@ const translatePath = useTranslatedPath(lang);
       <a href="/">Español</a>,
       <a href="/en">English</a>
     </p>
-    <div class="level px-6 mt-4">
-      <div class="level-left"></div>
+    <div class="level pl-5 pr-6 mt-4">
+      <div class="level-left is-size-7">
+        <div>
+          <span class="is-italic mr-0 pr-0">{t("footer.inspired")}</span>
+          <a href="https://ruby-lang.org" target="_blank" class="is-size-7 ml-0 pl-0">ruby-lang</a>
+          <span class="is-italic mr-0 pr-0">{t("footer.designed")}</span>
+          <a href="https://ecomba.pro" target="_blank" class="is-size-7 ml-0 pl-0">@ecomba</a>
+        </div>
+      </div>
       <div class="level-right">
         <span class="is-size-7">{t("footer.follow")}</span>
         <a href="https://slack.vlctechhub.org/" target="_blank"><span class="icon"><i class="fab fa-slack"></i></span></a>
