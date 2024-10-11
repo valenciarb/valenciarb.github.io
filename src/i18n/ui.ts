@@ -6,14 +6,6 @@ export const languages = {
 export const defaultLang = "es";
 export const showDefaultLang = false;
 
-export const routes = {
-  // es: {
-  //     'services': 'servicios',
-  //     'publications': 'publicaciones',
-  //     'testimonials': 'testimonios',
-  // },
-};
-
 export const ui = {
   en: {
     "header.tagline": "a user-group for developers, techies & ruby lovers",
