@@ -1,35 +1,53 @@
-# Astro Starter Kit: Minimal
-
-```sh
-npm create astro@latest -- --template minimal
-```
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+# Valencia.rb website
 
 ## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
+The following folders and files are the main ones to change to update the content
+of our website:
 
 ```text
 /
 ├── public/
+│   └── assets/ <-- Here we add things like downloads (pdfs from talks, etc.)
+│   └── images/
+│       └── people/ <-- These are the avatars that appear in the members section
 ├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+│   └── images/
+│       └── logos/ <-- These are the logos for the sponsors
+│   └── pages/meetings <-- The meeting pages (in spanish)
+│   └── pages/en/meetings <-- The meeting pages (in english)
+└── people.json <-- Contains the information about the members of Valencia.rb
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## 🎤 Adding a new event
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+To add a new event you'll have to add it to the `src/pages/meetings` and `src/pages/en/meetings` directories
+(‼️ this is important. If you forget to add the meeting to either the main or the `en` directories the page
+will fail to serve that meeting in the respective language and we will have a sad 🦇.
 
-Any static assets, like images, can be placed in the `public/` directory.
+### Structure of the meeting markdown file
 
-## 🧞 Commands
+```
+layout: ../../layouts/MeetingLayout.astro (or, when in the /en directory ../../../layouts/MeetingLayout.astro)
+date: 2024-11-06 18:00
+title: "Title of the meeting"
+location: "Name of the place where the meeting will take place"
+location_map: "URL of the google map for the location"
+posted: "Name of the person who posted this meeting"
+sponsor:
+  name: "Name of the sponsor"
+  url: "URL of the sponsors website"
+  logo: "Logo of the sponsor (image file)"
+  logo_width: "Width of the sponsors logo"
+extras:
+  src: "Image file"
+  alt: "Alt text for the image"
+  width: "Width of the image"
+```
+
+
+
+## 🧞 Commands for running this site locally
 
 All commands are run from the root of the project, from a terminal:
 
