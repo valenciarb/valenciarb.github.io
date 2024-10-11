@@ -22,7 +22,7 @@ Our re-launch event couldn't be better! The [Ruby Europe](https://rubyeurope.com
 
 At our next meeting, we are pleased to have [Rosa Gutiérrez](https://rosa.codes), a programmer at [37Signals](https://37signals.com) (_the company behind [Ruby on Rails](https://rubyonrails.org) and products like [Basecamp](https://basecamp.com) and [Hey](https://www.hey.com)_).
 
-We also have the support of [New Work Valencia]() who will let us meet in their offices.
+We also have the support of [New Work Valencia](https://new-work.se/en/career/valencia) who will let us meet in their offices.
 
 **We'll see you on November 6th**
 

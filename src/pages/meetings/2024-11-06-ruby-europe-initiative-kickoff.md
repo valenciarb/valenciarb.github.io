@@ -26,7 +26,7 @@ En nuestra siguiente reunión tenemos el placer de contar con
 [Rosa Gutiérrez](https://rosa.codes), programadora en [37Signals](https://37signals.com) (_la compañia detras
 de [Ruby on Rails](https://rubyonrails.org) y productos como [Basecamp](https://basecamp.com) y [Hey](https://www.hey.com)_).
 
-También contamos con el apoyo de [New Work Valencia]() que nos dejarán reunirnos
+También contamos con el apoyo de [New Work Valencia](https://new-work.se/en/career/valencia) que nos dejarán reunirnos
 en sus oficinas.
 
 **Nos vemos el dia 6 de Noviembre**
