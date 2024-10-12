@@ -1,10 +1,6 @@
 {
   "people": [
     {
-      "avatar": "eduardo-sebastian.jpeg",
-      "name": "Eduardo Sebastian"
-    },
-    {
       "avatar": "carla-urrea.png",
       "name": "Carla Urrea Stabile",
       "social_name": "carlastabile",
@@ -21,15 +17,6 @@
       "social_link": "https://github.com/iox",
       "website": "https://starfish.team/",
       "intro": "Open source enthusiast, with a particular love of Ruby and building nice software with it."
-    },
-    {
-      "avatar": "llyorshch.png",
-      "name": "Jorge Mora Giménez"
-    },
-    {
-      "avatar": "juan-f-perez.jpeg",
-      "name": "Juan F. Pérez",
-      "intro": "Hago algunas cosas"
     },
     {
       "avatar": "ecomba.png",
