@@ -2,7 +2,7 @@
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
 import Person from "./Person.astro";
 import data from "../people.json";
-const people = data.people;
+const people = data.people.sort((a, b) => a["name"].localeCompare(b["name"]))
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
