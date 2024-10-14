@@ -39,7 +39,6 @@ date: 2024-11-06 18:00
 title: "Title of the meeting"
 location: "Name of the place where the meeting will take place"
 location_map: "URL of the google map for the location"
-posted: "Name of the person who posted this meeting"
 sponsor:
   name: "Name of the sponsor"
   url: "URL of the sponsors website"

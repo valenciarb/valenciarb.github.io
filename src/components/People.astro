@@ -29,3 +29,16 @@ const t = useTranslations(lang);
     )}
   </div>
 </div>
+
+<div class="is-size-7 is-italic">
+  <span><Fragment set:html={t("people.question")}/></span>
+  <div class="content mt-2">
+    <ul>
+      <li>{t("people.name")}</li>
+      <li>{t("people.photo")}</li>
+      <li>{t("people.description")}</li>
+      <li>{t("people.socials")}</li>
+      <li>{t("people.website")}</li>
+    </ul>
+  </div>
+</div>

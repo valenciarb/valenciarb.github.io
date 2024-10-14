@@ -32,7 +32,6 @@ const date = new Date(frontmatter.date).toLocaleDateString(lang, dateOptions);
       title={frontmatter.title}
       location={frontmatter.location}
       location_map={frontmatter.location_map}
-      posted={frontmatter.author}
       >
       <slot/>
       { frontmatter.sponsor?

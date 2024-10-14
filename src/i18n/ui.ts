@@ -26,6 +26,13 @@ export const ui = {
     sponsors: "Sponsors",
     "sponsors.thanks": "Thanks our sponsors!",
     "sponsors.event.thanks": "Thanks to this events sponsors!",
+    "people.question":
+      "Can't see your name here? Send an email to <a href='mailto:valenciarb@ecomba.pro?subject=Please add me to members list'>ecomba</a> with the following details:",
+    "people.name": "Your name",
+    "people.photo": "A photo (square if possible) of yourself",
+    "people.description": "A short description about yourself",
+    "people.socials": "A link to your social media profile (optional)",
+    "people.website": "A link to your website (optional)",
   },
   es: {
     "header.tagline": "un grupo para desarolladores, techies y amantes de ruby",
@@ -46,5 +53,12 @@ export const ui = {
     sponsors: "Sponsors",
     "sponsors.thanks": "¡Agradecimientos nuestros sponsors!",
     "sponsors.event.thanks": "¡Agradecimientos a los sponsors de este evento!",
+    "people.question":
+      "¿No ves tu nombre aquí? Envía un correo electrónico a <a href='mailto:valenciarb@ecomba.pro?subject=Añademe a la lista de miembros, por favor!'>ecomba</a>  con los siguientes detalles:",
+    "people.name": "Tu nombre",
+    "people.photo": "Una photo tuya (quadrada si es posible)",
+    "people.description": "Una frase sobre ti",
+    "people.socials": "Enlace a tu perfil en redes sociales",
+    "people.website": "Enlace a tu pagina web",
   },
 } as const;
