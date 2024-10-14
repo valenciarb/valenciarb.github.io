@@ -33,6 +33,7 @@ export const ui = {
     "people.description": "A short description about yourself",
     "people.socials": "A link to your social media profile (optional)",
     "people.website": "A link to your website (optional)",
+    at: "at",
   },
   es: {
     "header.tagline": "un grupo para desarolladores, techies y amantes de ruby",
@@ -60,5 +61,6 @@ export const ui = {
     "people.description": "Una frase sobre ti",
     "people.socials": "Enlace a tu perfil en redes sociales",
     "people.website": "Enlace a tu pagina web",
+    at: "a las",
   },
 } as const;

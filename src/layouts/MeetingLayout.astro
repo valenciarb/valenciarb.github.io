@@ -18,6 +18,7 @@ const dateOptions: Intl.DateTimeFormatOptions = {
   day: "numeric"
 };
 const date = new Date(frontmatter.date).toLocaleDateString(lang, dateOptions);
+const time = new Date(frontmatter.date).toTimeString().slice(0, 5);
 ---
 <html lang="en" class="theme-light">
   <Head
@@ -28,7 +29,7 @@ const date = new Date(frontmatter.date).toLocaleDateString(lang, dateOptions);
     <NarrowSection>
     <Meeting
       date={date}
-      date_time={frontmatter.date}
+      time={time}
       title={frontmatter.title}
       location={frontmatter.location}
       location_map={frontmatter.location_map}

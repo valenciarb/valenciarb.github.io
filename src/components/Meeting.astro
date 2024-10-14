@@ -4,7 +4,7 @@ import { getLangFromUrl, useTranslations } from '../i18n/utils';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
-const { date, date_time, title = "", location="", location_map="", posted="" } = Astro.props
+const { date, time, title = "", location="", location_map="", posted="" } = Astro.props
 const hasSponsors = Astro.slots.has("sponsors");
 ---
 <article class="meeting">
@@ -16,7 +16,7 @@ const hasSponsors = Astro.slots.has("sponsors");
       </h1>
     }
     <h2 class="subtitle is-size-6">
-      <time datetime=`${date_time}`>{date}</time>
+      <time datetime=`${date}`>{date} {t("at")} {time}</time>
     </h2>
     </div>
     <div class="column">

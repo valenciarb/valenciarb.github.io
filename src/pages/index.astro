@@ -23,7 +23,7 @@ const latestMeeting = allMeetings.reverse()[0];
 
   <Meeting
   date={new Date((latestMeeting as any).frontmatter.date).toLocaleDateString("es", dateOptions)}
-  date_time={(latestMeeting as any).frontmatter.date}
+  time={new Date((latestMeeting as any).frontmatter.date).toTimeString().slice(0,5)}
   title={(latestMeeting as any).frontmatter.title}
   location={(latestMeeting as any).frontmatter.location}
   location_map={(latestMeeting as any).frontmatter.location_map}
