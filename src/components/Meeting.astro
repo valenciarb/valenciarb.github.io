@@ -4,8 +4,18 @@ import { getLangFromUrl, useTranslations } from '../i18n/utils';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
-const { date, time, title = "", location="", location_map="", posted="" } = Astro.props
+const { date, title = "", location="", location_map="", posted="" } = Astro.props
 const hasSponsors = Astro.slots.has("sponsors");
+
+const dateOptions: Intl.DateTimeFormatOptions = {
+  weekday: "long",
+  year: "numeric",
+  month: "long",
+  day: "numeric"
+};
+
+const day = new Date(date).toLocaleDateString(lang, dateOptions);
+const time = new Date(date).toTimeString().slice(0, 5);
 ---
 <article class="meeting">
   <div class="columns">
@@ -16,7 +26,7 @@ const hasSponsors = Astro.slots.has("sponsors");
       </h1>
     }
     <h2 class="subtitle is-size-6">
-      <time datetime=`${date}`>{date} {t("at")} {time}</time>
+      <time datetime=`${day}`>{day} {t("at")} {time}</time>
     </h2>
     </div>
     <div class="column">

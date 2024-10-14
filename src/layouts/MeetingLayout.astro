@@ -6,19 +6,8 @@ import Logo from "../components/Logo.astro";
 import Meeting from "../components/Meeting.astro";
 import MeetingSponsor from "../components/MeetingSponsor.astro"
 import NarrowSection from "../components/NarrowSection.astro";
-import { getLangFromUrl } from '../i18n/utils';
-
-const lang = getLangFromUrl(Astro.url);
 
 const { frontmatter } = Astro.props;
-const dateOptions: Intl.DateTimeFormatOptions = {
-  weekday: "long",
-  year: "numeric",
-  month: "long",
-  day: "numeric"
-};
-const date = new Date(frontmatter.date).toLocaleDateString(lang, dateOptions);
-const time = new Date(frontmatter.date).toTimeString().slice(0, 5);
 ---
 <html lang="en" class="theme-light">
   <Head
@@ -28,8 +17,7 @@ const time = new Date(frontmatter.date).toTimeString().slice(0, 5);
     <Header/>
     <NarrowSection>
     <Meeting
-      date={date}
-      time={time}
+      date={frontmatter.date}
       title={frontmatter.title}
       location={frontmatter.location}
       location_map={frontmatter.location_map}

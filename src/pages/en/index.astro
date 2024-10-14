@@ -1,18 +1,10 @@
 ---
-import { getLangFromUrl } from '../../../src/i18n/utils';
 import Logo from "../../components/Logo.astro";
 import Meeting from "../../components/Meeting.astro";
 import MeetingSponsor from "../../components/MeetingSponsor.astro";
 import PageLayout from "../../layouts/PageLayout.astro";
 import People from "../../components/People.astro";
 
-const dateOptions: Intl.DateTimeFormatOptions = {
-  weekday: "long",
-  year: "numeric",
-  month: "long",
-  day: "numeric"
-};
-const lang = getLangFromUrl(Astro.url);
 // @ts-ignore
 const allMeetings = Object.values(import.meta.glob('./../en/meetings/*.md', { eager: true }));
 const latestMeeting = allMeetings.reverse()[0];
@@ -25,8 +17,7 @@ const latestMeeting = allMeetings.reverse()[0];
   <hr>
 
   <Meeting
-  date={new Date((latestMeeting as any).frontmatter.date).toLocaleDateString(lang, dateOptions)}
-  time={new Date((latestMeeting as any).frontmatter.date).toTimeString().slice(0,5)}
+  date={(latestMeeting as any).frontmatter.date}
   title={(latestMeeting as any).frontmatter.title}
   location={(latestMeeting as any).frontmatter.location}
   location_map={(latestMeeting as any).frontmatter.location_map}
