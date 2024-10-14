@@ -29,7 +29,7 @@ You can't miss it!
 
 **Agenda**
 
-- **Beyond Meetups: Creating Ruby Ecosystem**
+**Beyond Meetups: Creating Ruby Ecosystem**
 
   _"Discover how Ruby Europe is building a stronger Ruby ecosystem.
   Learn how this organization supports community development
@@ -37,7 +37,7 @@ You can't miss it!
 
 <hr>
 
-- **Solid Queue internals, externals and all the things in between**
+**Solid Queue internals, externals and all the things in between**
 
   _"We’ve used Resque and Redis to run background jobs in multiple apps
   for many years at 37signals. However, performance, reliability,
@@ -55,7 +55,7 @@ You can't miss it!
 
 <hr>
 
-- **My LLM is smarter than yours - the Ruby way to build RAG applications**
+**My LLM is smarter than yours - the Ruby way to build RAG applications**
 
   _"The talk will cover how to use Large Language Models (LLMs) and Embeddings
   to build applications that reason about internal (in-house) knowledge.
