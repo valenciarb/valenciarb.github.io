@@ -62,4 +62,4 @@ You can't miss it!
   How to make apps smarter and more context-aware. And all that in the context
   of Ruby (and a bit of Rails) tools and solutions_"
 
-  Pawel Strzalkowski
+  [Pawel Strzalkowski](https://github.com/pstrzalk)
