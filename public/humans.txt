@@ -1,0 +1,21 @@
+/* TEAM */
+
+  Coding: Enrique Comba Riepenhausen
+  mastodon: https://ruby.social/@ecomba
+  bluesky: https://bsky.app/profile/ecomba.pro
+  website: https://ecomba.pro
+  Location: Valencia, ES
+
+/* THANKS */
+
+  Original site idea and coding: Enrique Comba Riepenhausen
+  Inspiration from: https://ruby-lang.org
+  Site: http://ecomba.pro
+  mastodon: https://ruby.social/@ecomba
+  bluesky: https://bsky.app/profile/ecomba.pro
+  Location: Valencia, ES
+
+/* SITE */
+
+  Standards: HTML5, CSS3
+  Software: Astro
