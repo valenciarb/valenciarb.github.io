@@ -35,6 +35,8 @@ You can't miss it!
   Learn how this organization supports community development
   and how you can be part of shaping its future."_
 
+  [Mariusz Kozieł](https://x.com/KozieMariusz)
+
 <hr>
 
 **Solid Queue internals, externals and all the things in between**
