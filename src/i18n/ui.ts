@@ -23,7 +23,7 @@ export const ui = {
     "footer.inspired": "inspired by",
     "footer.designed": "& designed by",
     members: "Members",
-    sponsors: "Sponsors",
+    sponsors: "Sponsored by",
     "sponsors.thanks": "Thanks our sponsors!",
     "sponsors.event.thanks": "Thanks to this events sponsors!",
     "people.question":
@@ -51,7 +51,7 @@ export const ui = {
     "footer.inspired": "inspirado por",
     "footer.designed": "y diseñado por",
     members: "Miembros",
-    sponsors: "Sponsors",
+    sponsors: "Patrocinado por",
     "sponsors.thanks": "¡Agradecimientos nuestros sponsors!",
     "sponsors.event.thanks": "¡Agradecimientos a los sponsors de este evento!",
     "people.question":
