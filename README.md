@@ -12,6 +12,7 @@ of our website:
 │   └── images/
 │       └── people/ <-- These are the avatars that appear in the members section
 ├── src/
+│   └── announcements/ <-- This directory contains the spanish and english announcement files (see below)
 │   └── images/
 │       └── logos/ <-- These are the logos for the sponsors
 │   └── pages/meetings <-- The meeting pages (in spanish)
@@ -75,6 +76,36 @@ There are the following (optional) fields:
 - website: the URL to their website
 - intro: a little text about them
 
+Example person:
+
+```
+{
+  "avatar": "ecomba.png",
+  "name": "Enrique Comba Riepenhausen",
+  "social_name": "ecomba",
+  "social_link": "https://ruby.social/@ecomba",
+  "social_icon": "mastodon",
+  "website": "https://ecomba.pro",
+  "intro": "I help software teams like yours to build better software faster by making you awesome!"
+}
+```
+
+## 📢 Announcements
+
+Sometimes we want to announce something special (_a special event, conference, etc._).
+For these occasions we will use the announcements component.
+
+There are two steps for creating an announcement:
+
+- Write your announcement by overriding the content of the `src/announcements/` files (`announcement` for english announcements
+and `anuncio` for the spanish announcements).
+- Uncomment the `<Announcement>` component in the `src/pages/index.astro` and `src/pages/en/index.astro` files.
+
+On the other hand, when we don't want to display an announcement any longer on the website we just have
+to comment the `<Announcement>` component in the `src/pages/index.astro` and `src/pages/en/index.astro`
+pages.
+
+And that's it!
 
 ## 🧞 Commands for running this site locally
 

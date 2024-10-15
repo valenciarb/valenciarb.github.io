@@ -4,6 +4,9 @@ import Meeting from "../../components/Meeting.astro";
 import MeetingSponsor from "../../components/MeetingSponsor.astro";
 import PageLayout from "../../layouts/PageLayout.astro";
 import People from "../../components/People.astro";
+import Announcement from "../../components/Announcement.astro";
+import * as announcement from "../../announcements/announcement.md";
+
 
 // @ts-ignore
 const allMeetings = Object.values(import.meta.glob('./../en/meetings/*.md', { eager: true }));
@@ -13,7 +16,10 @@ const latestMeeting = allMeetings.reverse()[0];
   title="Welcome to the Valencia.rb user group"
   >
 
-  <h1 class="title">Next Meeting</h1>
+  <Announcement slot="announcement" announcement={announcement}/>
+
+  <h1 class="title" id="next_meeting">Next Meeting</h1>
+
   <hr>
 
   <Meeting

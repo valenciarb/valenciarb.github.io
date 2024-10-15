@@ -4,6 +4,9 @@ import Meeting from "../components/Meeting.astro";
 import MeetingSponsor from "../components/MeetingSponsor.astro";
 import PageLayout from "../layouts/PageLayout.astro";
 import People from "../components/People.astro";
+import Announcement from "../components/Announcement.astro";
+import * as announcement from "../announcements/anuncio.md";
+
 
 const allMeetings = Object.values(import.meta.glob('./meetings/*.md', { eager: true }));
 const latestMeeting = allMeetings.reverse()[0];
@@ -12,7 +15,10 @@ const latestMeeting = allMeetings.reverse()[0];
   title="Bienvenidos al grupo de Valencia.rb"
   >
 
-  <h1 class="title">Próxima Reunión</h1>
+  <Announcement slot="announcement" announcement={announcement}/>
+
+  <h1 class="title" id="next_meeting">Próxima Reunión</h1>
+
   <hr>
 
   <Meeting

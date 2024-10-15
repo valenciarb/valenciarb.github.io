@@ -97,6 +97,7 @@ a {
 }
 
 .anouncement {
+  background-color: #f6f6f3;
   background-size: 412px 421px;
   box-sizing: border-box;
   border-bottom-color: rgb(204, 204, 204);
@@ -107,14 +108,22 @@ a {
   border-top-width: 1px;
 
   h1 {
+    text-align: center;
     color: rgb(204, 52, 45);
-    font-size: 32px;
+    font-size: 26px;
+    font-weight: 800;
+    text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+  }
+  h2 {
+    font-size: 18px;
     font-weight: 800;
     text-shadow: rgb(255, 255, 255) 0px 1px 0px;
   }
   p {
-    font-size: 22px;
     color: black;
     text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+  }
+  span {
+    text-shadow: none;
   }
 }

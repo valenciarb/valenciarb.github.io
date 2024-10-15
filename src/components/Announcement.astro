@@ -1,0 +1,12 @@
+---
+const { announcement } = Astro.props
+---
+{ announcement &&
+<div class="has-text-centered anouncement py-4 my-6">
+  <div class="container is-max-desktop">
+    <div class="content has-text-left is-size-6 p-4">
+      <Fragment set:html={announcement.compiledContent()}/>
+    </div>
+  </div>
+</div>
+}
