@@ -6,6 +6,7 @@ import cloudflare from "@astrojs/cloudflare";
 export default defineConfig({
   output: "server",
   adapter: cloudflare(),
+  site: "https://valenciarb.org",
   i18n: {
     defaultLocale: "es",
     locales: ["es", "en"],
