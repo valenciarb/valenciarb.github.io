@@ -4,7 +4,7 @@ import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
 export default defineConfig({
-  output: "server",
+  output: "static",
   adapter: cloudflare(),
   site: "https://valenciarb.org",
   i18n: {
