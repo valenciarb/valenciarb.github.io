@@ -6,7 +6,7 @@
 
 ## 🗓️ Mark Your Calendars:
 
-- Nov 5: Barcelona (Factorial HR office)
+- Nov 5: Barcelona (Loft de Gràcia)
 - Nov 6: Valencia (New Work office) – _[see more](#next_meeting)_
 - Nov 7: Madrid (Lingokids office)
 
