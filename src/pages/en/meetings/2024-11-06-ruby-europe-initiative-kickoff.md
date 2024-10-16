@@ -27,6 +27,10 @@ We also have the support of [New Work Valencia](https://new-work.se/en/career/va
 
 You can't miss it!
 
+<div class="has-text-centered">
+  <a href="https://www.meetup.com/vlctechhub/events/304025350/" target="_blank" class="button has-background-red">Register now!</a>
+</div>
+
 **Agenda**
 
 **Beyond Meetups: Creating Ruby Ecosystem**

@@ -32,6 +32,10 @@ en sus oficinas.
 
 ¡No os lo podeis perder!
 
+<div class="has-text-centered">
+  <a href="https://www.meetup.com/vlctechhub/events/304025350/" target="_blank" class="button has-background-red">¡Registrate ahora!</a>
+</div>
+
 ##### Agenda
 
 **Beyond Meetups: Creating Ruby Ecosystem**

@@ -12,6 +12,11 @@ a {
   color: #cc342d !important;
 }
 
+.has-background-red {
+  color: white;
+  background-color: #cc342d !important;
+}
+
 .header {
   .title {
     font-size: 36px;
