@@ -26,13 +26,9 @@ export const ui = {
     sponsors: "Sponsored by",
     "sponsors.thanks": "Thanks our sponsors!",
     "sponsors.event.thanks": "Thanks to this events sponsors!",
-    "people.question":
-      "Can't see your name here? Send an email to <a href='mailto:valenciarb@ecomba.pro?subject=Please add me to members list'>ecomba</a> with the following details:",
-    "people.name": "Your name",
-    "people.photo": "A photo (square if possible) of yourself",
-    "people.description": "A short description about yourself",
-    "people.socials": "A link to your social media profile (optional)",
-    "people.website": "A link to your website (optional)",
+    "people.question": "Can't see your name in the list?",
+    "people.answer":
+      "Send a PR to <a href='https://github.com/valenciarb/valenciarb.github.io/' target='_blank'>valenciarb.github.io</a> with your information (for more details read the <a href='https://github.com/valenciarb/valenciarb.github.io/blob/main/README.md#%EF%B8%8F%EF%B8%8F-adding-a-new-members' target='_blank'>README</a>).",
     at: "at",
   },
   es: {
@@ -54,13 +50,9 @@ export const ui = {
     sponsors: "Patrocinado por",
     "sponsors.thanks": "¡Agradecimientos nuestros sponsors!",
     "sponsors.event.thanks": "¡Agradecimientos a los sponsors de este evento!",
-    "people.question":
-      "¿No ves tu nombre aquí? Envía un correo electrónico a <a href='mailto:valenciarb@ecomba.pro?subject=Añademe a la lista de miembros, por favor!'>ecomba</a>  con los siguientes detalles:",
-    "people.name": "Tu nombre",
-    "people.photo": "Una photo tuya (quadrada si es posible)",
-    "people.description": "Una frase sobre ti",
-    "people.socials": "Enlace a tu perfil en redes sociales",
-    "people.website": "Enlace a tu pagina web",
+    "people.question": "¿No ves tu nombre en la lista?",
+    "people.answer":
+      "Manda un PR a <a href='https://github.com/valenciarb/valenciarb.github.io/' target='_blank'>valenciarb.github.io</a> con tus datos (para mas información lee <a href='https://github.com/valenciarb/valenciarb.github.io/blob/main/README.md#%EF%B8%8F%EF%B8%8F-adding-a-new-members' target='_blank'>README</a>).",
     at: "a las",
   },
 } as const;
