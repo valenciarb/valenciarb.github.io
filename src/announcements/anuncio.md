@@ -6,7 +6,7 @@
 
 ## 🗓️ Marca en tu Calendario:
 
-- 5 de Nov: Barcelona (oficina Factorial HR)
+- 5 de Nov: Barcelona (Loft de Gràcia)
 - 6 de Nov: Valencia (oficina de New Work) – _[ver más](#next_meeting)_
 - 7 de Nov: Madrid (oficina de Lingokids)
 
