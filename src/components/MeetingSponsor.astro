@@ -5,7 +5,9 @@ const { sponsor } = Astro.props
 ---
 {sponsor.logo?
 <a href=`${sponsor.url}` target="_blank">
-  <Logo src={sponsor.logo} alt={sponsor.name} width={sponsor.logo_width}/>
+  <div style=`max-width: ${sponsor.logo_width};`>
+    <Logo src={sponsor.logo} alt={sponsor.name} />
+  </div>
 </a>
 :
 <a href=`${sponsor.url}` target="_blank">{sponsor.name}</a>

@@ -19,13 +19,6 @@ const { title } = Astro.props
     <Header/>
     <slot name="announcement"/>
 
-    <!-- <Anouncement>
-      <h1>2024 Kick-off meeting!</h1>
-      <p>
-        Yes, you heard that right, we are back!
-      </p>
-    </Anouncement> -->
-
     <NarrowSection>
       <slot/>
       <hr>
@@ -34,7 +27,9 @@ const { title } = Astro.props
         <div class="grid">
           <div class="cell">
             <a href="https://www.iukanet.com" target="_blank">
-              <Logo src="iukanet.png" alt="Administración de Sistemas y Servidores a Medida" width="100"/>
+              <div style="max-width: 100px;">
+                <Logo src="iukanet.png" alt="Administración de Sistemas y Servidores a Medida"/>
+              </div>
             </a>
           </div>
         </div>
