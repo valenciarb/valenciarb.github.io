@@ -31,7 +31,7 @@ const { frontmatter } = Astro.props;
       { frontmatter.extras?
         <div slot="extras">
           <div class="has-text-right">
-            <Logo src={frontmatter.extras.src} alt={frontmatter.extras.alt} width={frontmatter.extras.width}/>
+            <Logo src={frontmatter.extras.src} alt={frontmatter.extras.alt} />
           </div>
         </div>
         :

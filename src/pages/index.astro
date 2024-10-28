@@ -34,7 +34,7 @@ const latestMeeting = allMeetings.reverse()[0];
   { (latestMeeting as any).frontmatter.extras ?
     <div slot="extras">
       <div class="has-text-right">
-      <Logo src={(latestMeeting as any).frontmatter.extras.src} alt={(latestMeeting as any).frontmatter.extras.alt} width={(latestMeeting as any).frontmatter.extras.width}/>
+      <Logo src={(latestMeeting as any).frontmatter.extras.src} alt={(latestMeeting as any).frontmatter.extras.alt} />
       </div>
     </div>
     : null
