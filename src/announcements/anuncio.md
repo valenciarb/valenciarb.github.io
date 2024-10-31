@@ -1,7 +1,7 @@
 ---
 ---
-# ‼️ Cancelación del proximo evento ‼️
-Desde la organización de Valenciarb hemos decidido posponer el proximo Meetup del día 6 de Noviembre al **4 de Diciembre.**
+# ‼️ Posponemos el proximo evento ‼️
+Desde la organización de Valencia.rb hemos decidido posponer el proximo Meetup del día 6 de Noviembre.
 
 Como comunidad nuestra prioridad es ofrecer un evento de calidad y un espacio seguro y a día de hoy no podemos garantizar
 que se pueda asistir al evento sin ningún tipo de riesgo tanto como para los ponentes como asistentes.

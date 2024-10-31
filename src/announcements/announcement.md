@@ -1,8 +1,8 @@
 ---
 ---
-# ‼️ Event Cancelation ‼️
+# ‼️ Event Postponed ‼️
 
-The Valenciarb organization has decided to postpone the next Meetup from November 6th to December 4th.
+The Valencia.rb organization has decided to postpone the next Meetup from November 6th.
 
 As a community, our priority is to offer a quality event and a safe space, and today we cannot guarantee that people can attend the event without any kind of risk for both speakers and attendees.
 
