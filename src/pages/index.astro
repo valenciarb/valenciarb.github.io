@@ -17,11 +17,11 @@ const latestMeeting = allMeetings.reverse()[0];
 
   <Announcement slot="announcement" announcement={announcement}/>
 
-  <h1 class="title" id="next_meeting">Próxima Reunión</h1>
+  <h1 class="title" id="next_meeting">Próxima Reunión CANCELADA</h1>
 
   <hr>
 
-  <Meeting
+  <!--Meeting
   date={(latestMeeting as any).frontmatter.date}
   title={(latestMeeting as any).frontmatter.title}
   location={(latestMeeting as any).frontmatter.location}
@@ -41,6 +41,6 @@ const latestMeeting = allMeetings.reverse()[0];
   }
 
   <Fragment set:html={(latestMeeting as any).compiledContent()}/>
-  </Meeting>
+  </Meeting-->
   <People/>
 </PageLayout>
