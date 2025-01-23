@@ -15,7 +15,9 @@ const latestMeeting = allMeetings.reverse()[0];
   title="Bienvenidos al grupo de Valencia.rb"
   >
 
-  <Announcement slot="announcement" announcement={announcement}/>
+  <!-- <Announcement slot="announcement" announcement={announcement}/> -->
+
+  <hr>
 
   <Meeting
   date={(latestMeeting as any).frontmatter.date}
