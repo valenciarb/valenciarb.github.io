@@ -18,7 +18,7 @@ sponsor:
 
 On this occasion we have the support of [Flywire Valencia](https://www.flywire.com) that kindly lends us the space to meet and have a good time in community.
 
-**See you on Wednesday, December 5th!**
+**See you on Wednesday, February 5th!**
 
 <div class="has-text-centered">
   <a href="https://www.meetup.com/vlctechhub/events/305775996/" target="_blank" class="button has-background-red">Register now!</a>

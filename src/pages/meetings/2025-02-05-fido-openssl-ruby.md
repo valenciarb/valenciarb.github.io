@@ -16,7 +16,7 @@ sponsor:
 
 En esta ocasión contamos con el apoyo de [Flywire Valencia](https://www.flywire.com) que amablemente nos cede el espacio para reunirnos y pasar un buen rato en comunidad.
 
-**¡Nos vemos el miércoles 5 de Diciembre!**
+**¡Nos vemos el miércoles 5 de febrero!**
 
 <div class="has-text-centered">
   <a href="https://www.meetup.com/vlctechhub/events/305775996/" target="_blank" class="button has-background-red">¡Registrate ahora!</a>
