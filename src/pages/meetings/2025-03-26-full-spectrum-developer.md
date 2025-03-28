@@ -20,3 +20,5 @@ En su charla, Enrique compartirá su visión de lo que es un _"full spectrum dev
 [New Work](https://new-work.se/en/career/valencia) amablemente nos ha ofrecido su espacio para reunirnos y pasar un buen rato juntos.
 
 ¡Nos vemos el miércoles 26!
+
+¿No pudiste venir? Aquí tienes las [slides de la charla](/assets/TheFullSpectrumDeveloper.pdf).
