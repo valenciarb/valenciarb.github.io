@@ -26,6 +26,14 @@
       "social_icon": "mastodon",
       "website": "https://ecomba.pro",
       "intro": "I help software teams like yours to build better software faster by making you awesome!"
+    },
+    {
+      "avatar": "llyorshch.png",
+      "name": "Jorge Mora Giménez",
+      "social_name": "llyorshch",
+      "social_link": "https://github.com/llyorshch",
+      "social_icon": "github",
+      "intro": "Evil Java bigot trying to destroy Ruby from within. So far, no success. The damn thing is too good."
     }
   ]
 }
