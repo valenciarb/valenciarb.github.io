@@ -22,3 +22,5 @@ In his talk Enrique will share his view of what a _"full spectrum developer"_ is
 time together.
 
 **See you Wednesday the 26th!**
+
+Couldn't come? Checkout the [slides of the talk](/assets/TheFullSpectrumDeveloper.pdf).
