@@ -13,7 +13,7 @@ sponsor:
 
 ![Learn MCP with Ruby](../../images/mcp-workshop.webp)
 
-¡Esta vez Vestimir Markov nos presentará el MCP en un divertido taller práctico (_en inglés)!
+¡Esta vez Vestimir Markov nos presentará el MCP en un divertido taller práctico (_en inglés_)!
  
 Model-Context-Protocol es un estándar completamente nuevo para añadir 
 herramientas y ampliar las capacidades de los grandes modelos de lenguaje 
