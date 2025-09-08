@@ -11,7 +11,7 @@ sponsor:
   logo_width: "200px"
 ---
 
-![Creando una gema de Ruby para OpenFGA](../../images/logos/ruby.png)
+![Creando una gema de Ruby para OpenFGA](../../images/logos/openfga.png)
 
 Volvemos después del verano con las pilas recargadas! 🔋
 
@@ -25,13 +25,13 @@ Discutiremos como el código auto-generado podría impactar la experiencia de
 developers, como afecta la mantenibilidad, debugging, y la sostenibilidad a 
 largo plazo.
 
-En esta ocasión contamos con el apoyo de [Guru Walk](https://www.guruwalk.com) 
+En esta ocasión contamos con el apoyo de [GuruWalk](https://www.guruwalk.com) 
 que amablemente nos cede el espacio para reunirnos y pasar un buen rato en comunidad.
 
 **¡Nos vemos el miércoles 24 de septiembre!**
 
 <div class="has-text-centered">
-  <a href="https://www.meetup.com/vlctechhub/events/305775996/" target="_blank" class="button has-background-red">¡Registrate ahora!</a>
+  <a href="https://www.meetup.com/vlctechhub/events/310937471/" target="_blank" class="button has-background-red">¡Registrate ahora!</a>
 </div>
 
 
