@@ -28,7 +28,6 @@ has offered us the space to meet and network as a community.
 
 **See you on Wednesday September 24th!**
 
-# TODO: update meetup link
 <div class="has-text-centered">
   <a href="https://www.meetup.com/vlctechhub/events/310937471/" target="_blank" class="button has-background-red">Sign Up Now!</a>
 </div>
