@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/MeetingLayout.astro
+layout: ../../../layouts/MeetingLayout.astro
 date: 2025-09-24 18:30
 title: "Building a Ruby Gem for OpenFGA: autogenerate or not?"
 location: "<a href='https://www.guruwalk.com/' target='_blank'>GuruWalk</a> Calle Guillem de Castro 9, 7th floor, Valencia 46007"
