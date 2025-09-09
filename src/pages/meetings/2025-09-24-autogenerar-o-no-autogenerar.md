@@ -15,7 +15,7 @@ sponsor:
 
 Volvemos después del verano con las pilas recargadas! 🔋
 
-En esta oportunidad [Carla Urrea Stabile](https://www.linkedin.com/in/carlastabile/) 
+En esta ocasión [Carla Urrea Stabile](https://www.linkedin.com/in/carlastabile/) 
 nos contará sobre su experiencia creando una gema de Ruby para el sistema de 
 autorización [OpenFGA](https://openfga.dev). Además compararemos código escrito 
 por ella y código auto-generado y exploraremos si compensa tener mas automatización a 

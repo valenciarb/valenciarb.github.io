@@ -13,9 +13,9 @@ sponsor:
 
 ![Creating a Ruby gem for OpenFGA!](../../images/logos/openfga.png)
 
-We are back after summer with reacharged batteries! 🔋
+We are back after summer with recharged batteries! 🔋
 
-In this chance, [Carla Urrea Stabile](https://www.linkedin.com/in/carlastabile/) 
+In this edition, [Carla Urrea Stabile](https://www.linkedin.com/in/carlastabile/) 
 will tell us about her experience building a ruby gem for the authorization engine
 [OpenFGA](https://openfga.dev). We'll compare hand-written code and auto-generated
 code and we'll explore if having more automatization is worth over legibility. 
