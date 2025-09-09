@@ -11,25 +11,23 @@ sponsor:
   logo_width: "200px"
 ---
 
-![Creating a Ruby gem for OpenFGA!](../../images/logos/openfga.png)
+![Creating a Ruby gem for OpenFGA!](../../../images/logos/openfga.png)
 
 We are back after summer with recharged batteries! 🔋
 
-In this edition, [Carla Urrea Stabile](https://www.linkedin.com/in/carlastabile/) 
+In this edition, [Carla Urrea Stabile](https://www.linkedin.com/in/carlastabile/)
 will tell us about her experience building a ruby gem for the authorization engine
 [OpenFGA](https://openfga.dev). We'll compare hand-written code and auto-generated
-code and we'll explore if having more automatization is worth over legibility. 
+code and we'll explore if having more automatization is worth over legibility.
 
 We'll discuss how auto-generated code can impact the developer experience, how it
-affects mantainability, debugging and sustainability in the long term. 
+affects mantainability, debugging and sustainability in the long term.
 
 This time we have the support of [GuruWalk](https://www.guruwalk.com) which
-has offered us the space to meet and network as a community. 
+has offered us the space to meet and network as a community.
 
 **See you on Wednesday September 24th!**
 
 <div class="has-text-centered">
   <a href="https://www.meetup.com/vlctechhub/events/310937471/" target="_blank" class="button has-background-red">Sign Up Now!</a>
 </div>
-
-
