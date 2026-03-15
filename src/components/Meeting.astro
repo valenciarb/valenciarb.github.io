@@ -41,7 +41,7 @@ const time = new Date(date).toTimeString().slice(0, 5);
         { hasSponsors?
           <aside class="notification my-6">
             <h2 class="subtitle is-size-5">{t("sponsors.event.thanks")}</h2>
-            <div class="has-text-right">
+            <div class="is-flex is-flex-wrap-wrap is-justify-content-flex-start is-align-items-center" style="gap: 4rem;">
               <slot name="sponsors"/>
             </div>
           </aside>
