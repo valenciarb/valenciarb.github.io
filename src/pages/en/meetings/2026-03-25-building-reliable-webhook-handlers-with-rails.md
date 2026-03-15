@@ -4,11 +4,15 @@ date: 2026-03-25 18:30
 title: "Building reliable webhook handlers with Rails"
 location: "<a href='https://new-work.se/en' target='_blank'>New Work</a> C. del Pintor Sorolla 11, València"
 location_map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5089.091761488374!2d-0.3733051!3d39.471064899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6049140afd6c35%3A0x3a7f3c26bcb251ef!2sNew%20Work%20SE%20Spain!5e1!3m2!1sen!2ses!4v1773586667465!5m2!1sen!2ses"
-sponsor:
-  name: New Work
-  url: https://new-work.se/en/career/valencia
-  logo: new_work.svg
-  logo_width: "200px"
+sponsors:
+  - name: New Work
+    url: https://new-work.se/en/career/valencia
+    logo: new_work.svg
+    logo_width: "200px"
+  - name: Auth0
+    url: https://auth0.com/
+    logo: auth0.png
+    logo_width: "170px"
 ---
 
 ![Building reliable webhook handlers with Rails(../../../images/logos/NewWorkKitchen.jpg)
