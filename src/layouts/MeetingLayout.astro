@@ -23,11 +23,9 @@ const { frontmatter } = Astro.props;
       location_map={frontmatter.location_map}
       >
       <slot/>
-      { frontmatter.sponsor?
-        <MeetingSponsor sponsor={frontmatter.sponsor} slot={frontmatter.sponsor && "sponsors"}/>
-        :
-        <span>ha</span>
-      }
+      { frontmatter.sponsors?.map((s: any) =>
+        <MeetingSponsor sponsor={s} slot="sponsors"/>
+      )}
       { frontmatter.extras?
         <div slot="extras">
           <div class="has-text-right">

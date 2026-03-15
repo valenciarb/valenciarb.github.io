@@ -2,10 +2,10 @@
 layout: ../../../layouts/MeetingLayout.astro
 date: 2015-12-15 19:00
 title: "Refactorizando a patrones: el juego de la vida"
-sponsor:
-  name: flywire
-  logo: flywire.png
-  url: http://www.peertransfer.com
+sponsors:
+  - name: flywire
+    logo: flywire.png
+    url: http://www.peertransfer.com
 ---
 
 En la última reunión del año, [Xavi Gost](https://twitter.com/xav1uzz) nos mostrará en riguroso playback una implementación del juego de la vida de Conway.

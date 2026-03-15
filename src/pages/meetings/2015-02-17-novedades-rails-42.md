@@ -2,10 +2,10 @@
 layout: ../../layouts/MeetingLayout.astro
 date: 2015-02-17 19:00
 title: "Novedades en Rails 4.2"
-sponsor:
-  name: peerTransfer
-  url: http://www.peertransfer.com
-  logo: peertransfer.png
+sponsors:
+  - name: peerTransfer
+    url: http://www.peertransfer.com
+    logo: peertransfer.png
 ---
 
 Rails 4.2 se publicó oficialmente hace aproximadamente un par de meses y llega incluyendo varias [novedades](http://guides.rubyonrails.org/v4.2.0/4_2_release_notes.html) muy interesantes.

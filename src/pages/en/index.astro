@@ -27,10 +27,9 @@ const latestMeeting = allMeetings.reverse()[0];
   location_map={(latestMeeting as any).frontmatter.location_map}
   posted={(latestMeeting as any).frontmatter.author}
   >
-  { (latestMeeting as any).frontmatter.sponsor ?
-  <MeetingSponsor sponsor={(latestMeeting as any).frontmatter.sponsor} slot={(latestMeeting as any).frontmatter.sponsor && "sponsors"}/>
-    : null
-  }
+  { (latestMeeting as any).frontmatter.sponsors?.map((s: any) =>
+    <MeetingSponsor sponsor={s} slot="sponsors"/>
+  )}
   { (latestMeeting as any).frontmatter.extras ?
     <div slot="extras">
       <div class="has-text-right">

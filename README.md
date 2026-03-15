@@ -40,11 +40,15 @@ date: 2024-11-06 18:00
 title: "Title of the meeting"
 location: "Name of the place where the meeting will take place"
 location_map: "URL of the google map for the location"
-sponsor:
-  name: "Name of the sponsor"
-  url: "URL of the sponsors website"
-  logo: "Logo of the sponsor (image file)"
-  logo_width: "Width of the sponsors logo"
+sponsors:
+  - name: "Name of the sponsor"
+    url: "URL of the sponsors website"
+    logo: "Logo of the sponsor (image file)"
+    logo_width: "Width of the sponsors logo"
+  - name: "You can add as many sponsors as needed"
+    url: "URL of the sponsors website"
+    logo: "Logo of the sponsor (image file)"
+    logo_width: "Width of the sponsors logo"
 extras:
   src: "Image file"
   alt: "Alt text for the image"
