@@ -9,12 +9,14 @@
     "preview": "astro preview",
     "astro": "astro"
   },
+  "overrides": {
+    "yaml-language-server": "1.21.0"
+  },
   "dependencies": {
-    "@astrojs/check": "^0.9.4",
-    "@astrojs/cloudflare": "^11.1.0",
+    "@astrojs/check": "^0.9.7",
     "@expressive-code/plugin-line-numbers": "^0.37.0",
-    "astro": "^4.15.12",
-    "astro-expressive-code": "^0.36.1",
+    "astro": "^6.0.4",
+    "astro-expressive-code": "^0.41.7",
     "typescript": "^5.6.3"
   }
 }
